@@ -355,6 +355,12 @@ pre {
     #pfs-slider .slider label:nth-child(6) {
       opacity: 1;
       left: 90px; }
+  @media screen and (max-width: 600px) {
+    #pfs-slider .slider .contenedor-img .text-overlay > h1 {
+      margin: 0;
+      font-size: 26px; }
+    #pfs-slider .slider .contenedor-img .text-overlay > p {
+      font-size: 12px; } }
 #pfs-slider .boton {
   position: absolute;
   display: block;
@@ -386,7 +392,7 @@ pre {
   color: #fff;
   position: absolute;
   width: 25%;
-  height: 40vw;
+  height: 43vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
@@ -408,7 +414,8 @@ pre {
   font-family: "m-semi_bold", Helvetica, Arial, sans-serif;
   font-size: 32px; }
 #pfs-slider .contenedor-img .text-overlay > p {
-  padding: 0 5vw; }
+  padding: 0 5vw;
+  margin-bottom: 30px; }
 #pfs-slider .tres-imagenes {
   width: 400%; }
   #pfs-slider .tres-imagenes img {
@@ -418,6 +425,25 @@ pre {
   left: 0;
   transition: left 0.3s ease-in;
   animation: iterar 20s ease-in 1; }
+@media screen and (max-width: 600px) {
+  #pfs-slider .contenedor-img {
+    box-sizing: border-box; }
+    #pfs-slider .contenedor-img .text-overlay {
+      height: 30vw;
+      background: transparent;
+      justify-content: center;
+      text-shadow: initial; }
+      #pfs-slider .contenedor-img .text-overlay p {
+        padding: 0 1vw;
+        margin-bottom: 0; }
+    #pfs-slider .contenedor-img img {
+      padding-top: 30vw; }
+      #pfs-slider .contenedor-img img:nth-child(2) {
+        background: #844BB6; }
+      #pfs-slider .contenedor-img img:nth-child(4) {
+        background: #8A1E14; }
+      #pfs-slider .contenedor-img img:nth-child(6) {
+        background: #000D1B; } }
 
 @keyframes iterar {
   0% {
@@ -450,7 +476,7 @@ section#pfs-static {
     position: relative;
     color: #00BFA5; }
     section#pfs-static .contenedor-img img {
-      min-height: 124px; }
+      min-height: 250px; }
     section#pfs-static .contenedor-img p {
       font-family: "m-semi_bold", Helvetica, Arial, sans-serif;
       position: absolute;
@@ -459,6 +485,9 @@ section#pfs-static {
       transform: translateY(-50%);
       padding: 7vw;
       text-transform: uppercase; }
+      @media screen and (max-width: 477px) {
+        section#pfs-static .contenedor-img p {
+          padding: 7vw 1vw; } }
 
 section#pfs-services {
   max-width: 1280px;
